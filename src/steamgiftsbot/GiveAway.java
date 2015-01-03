@@ -10,13 +10,15 @@ package steamgiftsbot;
  * @author Manos
  */
 public class GiveAway {
+    private boolean contributorOnly;
     private String title;
     private String link;
     private int entries;
     private int timeRemaining;
     private int pointsRequired;
 
-    public GiveAway(String title, String link, int entries, int timeRemaining, int pointsRequired){
+    public GiveAway(boolean contributorOnly, String title, String link, int entries, int timeRemaining, int pointsRequired){
+        this.contributorOnly = contributorOnly;
         this.title = title;
         this.link = link;
         this.entries = entries;
@@ -24,6 +26,9 @@ public class GiveAway {
         this.pointsRequired = pointsRequired;
     }
 
+    public boolean getContributorOnly(){
+        return contributorOnly;
+    }
     public String getTitle(){
         return title;
     }

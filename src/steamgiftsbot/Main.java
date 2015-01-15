@@ -7,6 +7,9 @@ package steamgiftsbot;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.*;
 import org.jsoup.select.*;
@@ -17,8 +20,11 @@ import org.jsoup.select.*;
  */
 public class Main {
 
-    public static void main(String[] args) throws IOException {
-        Corrector corrector = new Corrector();
-        Parser parser = new Parser();
+    public static void main(String[] args) throws IOException, URISyntaxException {
+        //Corrector corrector = new Corrector();
+        //Parser parser = new Parser();
+        //Options options = new Options();
+        UrlLauncher launcher = new UrlLauncher();
+        launcher.launch("http://www.google.com");
     }
 }

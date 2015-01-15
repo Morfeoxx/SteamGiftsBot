@@ -35,7 +35,7 @@ public class Parser {
             System.out.println("Contributor only: " + contributorRequired);
             System.out.println("Title: " + title);
             System.out.println("Points required: " + points);
-            System.out.println("Time remaining: " + timeRemaining + " seconds");
+            System.out.println("Time remaining: " + timeRemaining + " minutes");
             System.out.println("Entries so far: " + entries);
             System.out.println("Link: " + giveAwayLink);
             System.out.println("------------------------------------------------");
@@ -53,7 +53,8 @@ public class Parser {
         if (substrings[1].equals("seconds") || substrings[1].equals("second")){
             seconds = Integer.parseInt(substrings[0]);
         }
-        return seconds;
+        int minutes = seconds/60;
+        return minutes;
     }
     private static int convertEntries(String entries){
         int entriesInt = 0;

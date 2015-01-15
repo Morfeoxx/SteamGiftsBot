@@ -24,7 +24,6 @@ public class Main {
         //Corrector corrector = new Corrector();
         //Parser parser = new Parser();
         //Options options = new Options();
-        UrlLauncher launcher = new UrlLauncher();
-        launcher.launch("http://www.google.com");
+        //UrlLauncher launcher = new UrlLauncher();
     }
 }

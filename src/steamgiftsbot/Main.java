@@ -21,8 +21,8 @@ import org.jsoup.select.*;
 public class Main {
 
     public static void main(String[] args) throws IOException, URISyntaxException {
-        //Corrector corrector = new Corrector();
-        //Parser parser = new Parser();
+        Corrector corrector = new Corrector();
+        Parser parser = new Parser();
         //Options options = new Options();
         //UrlLauncher launcher = new UrlLauncher();
     }
